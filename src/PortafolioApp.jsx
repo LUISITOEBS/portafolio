@@ -5,12 +5,11 @@ import { ProyectoModal } from './components/ProyectoModal';
 
 export const PortafolioApp = () => {
     AOS.init({
-        once: true
+        once: true,
     });
     return (
         <>
-            <ProyectoModal />
-            <div className="container-fluid">
+            <div className="container-fluid" style={{overflowX: 'hidden'}}>
                 <div id="topDiv" className="row" style={{backgroundColor: '#6E07F3'}}>
                     <MyName />
                 </div>
@@ -34,7 +33,11 @@ export const PortafolioApp = () => {
                 <div className="row">
                     <Contacto />
                 </div>
+                <ProyectoModal />
             </div>
+
+
+
         </>
     )
 }

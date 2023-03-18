@@ -66,10 +66,16 @@ export const Contacto = () => {
                         </div>
                     </div>
                     
+                    
                     <p className="text-center"  style={{color: '#5BE9B9'}}>
                         O si lo prefieres mándame un correo: <br /><br />
-                        <b style={{fontSize: '20px', color: "white" }}>luise.ballesteross@gmail.com</b> 
+                        
                     </p>
+
+                    <p className="text-center" style={{color: '#5BE9B9', marginLeft: '-9px'}}>
+                        luise.ballesteross@gmail.com
+                    </p>
+
                     <div className="copyright">
                         <p className="text-center">
                             © Sitio web creado por Luis Enrique Ballesteros Soriano

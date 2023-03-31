@@ -27,8 +27,7 @@ export const Estudios = () => {
                     </div>
                 </div>
             </div>
+            <br /><br /> <br /><br />
         </div>
-
-        
     )
 }

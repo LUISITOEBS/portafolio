@@ -5,10 +5,7 @@ export const Navbar = () => {
     return (
         <nav
             className={`navbar navbar-expand-md navbar-light shadow-sm`}
-            style={{
-                backgroundColor: '#5BE9B9',
-
-            }}
+            style={{ backgroundColor: '#5BE9B9'}}
         >
             <div className="container-fluid">
                 <button className="navbar-toggler custom-toggler  ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

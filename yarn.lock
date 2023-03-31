@@ -1115,6 +1115,11 @@ react-scroll@^1.8.9:
     lodash.throttle "^4.1.1"
     prop-types "^15.7.2"
 
+react-skillbars@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/react-skillbars/-/react-skillbars-2.1.0.tgz#f536c643919e937c4f8b55f7f6631cf07e8e9fc6"
+  integrity sha512-O2np6H1w8z/+LR2MkznYekdNmX1cd3KAfWTLIYuRFI2YzFfRTgxma/xaqAn0V/dqpkCKu8VSWcKak/EesuPE4Q==
+
 react@^18.2.0:
   version "18.2.0"
   resolved "https://registry.yarnpkg.com/react/-/react-18.2.0.tgz#555bd98592883255fa00de14f1151a917b5d77d5"

@@ -9,6 +9,32 @@ h1, h2, h3, h4{
     z-index: 2;
 }
 
+.topDiv{
+    background-color: #6E07F3;
+}
+
+.modal {
+    background: white;
+    border-radius: 5px;
+    color: rgb(51, 51, 51);
+    display: inline;
+    max-height: 620px;
+    max-width: 500px;
+    outline: none;
+    padding: 10px;
+}
+
+
+.modal-fondo {
+    background-color: rgba(0, 0, 0, 0.3);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    position: fixed;
+    z-index: 3;
+}
+
 p{
     text-align: justify;
 }
@@ -296,22 +322,33 @@ img.user-pic2{
     content: "\f06e"; /* Código Unicode del icono de ojo de Font Awesome */
 }
 
+.mySkills{
+    padding-right: 100px;
+    padding-left: 100px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.skillbar{
+    background-color: rgb(200, 200, 200) !important;
+}
+
 @media screen and (max-width: 64rem){
     .my-col{
-      width: calc(33.333333% - 2rem);
+        width: calc(33.333333% - 2rem);
     }
 }
   
 @media screen and (max-width: 48rem){
     .my-col{
-      width: calc(50% - 2rem);
+        width: calc(50% - 2rem);
     }
 }
   
 @media screen and (max-width: 32rem){
     .my-col{
-      width: 100%;
-      margin: 0 0 2rem 0;
+        width: 100%;
+        margin: 0 0 2rem 0;
     }
 }
 
@@ -518,6 +555,10 @@ footer .copyright p a {
 	.grid .item {
 		width: calc(50% - 20px);
 	}
+
+    .mySkills{
+        padding: 30px;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -528,6 +569,9 @@ footer .copyright p a {
 	.overlay .container-popup {
 		max-width: 85%;
 	}
+    .mySkills{
+        padding: 20px;
+    }
 }
 
 a:hover{

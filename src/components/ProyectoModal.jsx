@@ -19,12 +19,15 @@ export const ProyectoModal = (  ) => {
             isOpen={ isOpen }
             onRequestClose={ closeModalClick }
             style={ customStyles }
+            className="modal"
             overlayClassName="modal-fondo"
             closeTimeoutMS={ 200 }
         >
+            <br />
             <div className="d-flex p-2 justify-content-center">
                 <Slider images={ proyecto?.imagenes } />
             </div>
+            <br />
             <div className="card-body">
                 <h4 className="card-title text-center" style={{ color: '#6E07F3'}}>
                     {proyecto?.proyecto}

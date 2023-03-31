@@ -1,4 +1,4 @@
-import { Me, MyName, Navbar, Proyectos, Trabajos, Estudios, Contacto } from './components';
+import { Me, MyName, Navbar, Proyectos, Trabajos, Estudios, Contacto, Skills } from './components';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { ProyectoModal } from './components/ProyectoModal';
@@ -7,37 +7,38 @@ export const PortafolioApp = () => {
     AOS.init({
         once: true,
     });
+    
     return (
         <>
-            <div className="container-fluid" style={{overflowX: 'hidden'}}>
-                <div id="topDiv" className="row" style={{backgroundColor: '#6E07F3'}}>
+            <div className="container-fluid">
+                <div id="topDiv" className="row topDiv">
                     <MyName />
                 </div>
-                <div className="row navbarDiv">
+                <div className="row navbarDiv" style={{ overflowX: 'visible' }}>
                     <Navbar />
                 </div>
-                <div className="row p-5">
+                <div className="row p-5" style={{overflowX: 'hidden'}}>
                     <Me />
                 </div>
                 <br /><br />
-                <div className="row">
+                <div className="row" style={{overflowX: 'hidden'}}>
                     <Proyectos />
                 </div>
                 <br /><br /><br /><br />
-                <div className="row">
+                <div className="row" style={{overflowX: 'hidden'}}>
                     <Trabajos />
                 </div>
-                <div className="row">
+                <div className="row" style={{overflowX: 'hidden'}}>
                     <Estudios />
                 </div>
-                <div className="row">
+                <div className="row" style={{overflowX: 'hidden'}}>
+                    <Skills />
+                </div>
+                <div className="row" style={{overflowX: 'hidden'}}>
                     <Contacto />
                 </div>
                 <ProyectoModal />
             </div>
-
-
-
         </>
     )
 }

@@ -2,15 +2,18 @@ import { Me, MyName, Navbar, Proyectos, Trabajos, Estudios, Contacto, Skills } f
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { ProyectoModal } from './components/ProyectoModal';
+import { useSelector } from 'react-redux';
 
 export const PortafolioApp = () => {
     AOS.init({
         once: true,
     });
+
+    const { isOpen } = useSelector( state => state.modal );
     
     return (
         <>
-            <div className="container-fluid">
+            <div className={`container-fluid ${isOpen ? 'modal-open' : ''}`}>
                 <div id="topDiv" className="row topDiv">
                     <MyName />
                 </div>

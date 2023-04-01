@@ -3,11 +3,6 @@ h1, h2, h3, h4{
     font-family: 'Open Sans', sans-serif;
 }
 
-.modal-open {
-    position: fixed;
-    width: 100%;
-}
-
 .navbarDiv {
     position: sticky;
     top: 0;
@@ -383,8 +378,8 @@ img.user-pic2{
         height: auto;
     }
     nav li {
-        text-align: center;
-    }
+        padding: 5px;
+     }
 
 }
 
@@ -629,4 +624,8 @@ a:hover{
     right: 0;
     padding: 1rem;
     border-radius: 0.5rem 0 0 0.5rem;
+}
+
+nav .collapsed {
+    width: auto !important;
 }
